@@ -31,3 +31,7 @@ Sample("T","U")
 	// B from the init block
 	// U from the second constructor
 ```
+
+## Lazy Initialization in Kotlin
+https://medium.com/android-dev-br/quando-utilizar-inicializa%C3%A7%C3%A3o-lazy-do-kotlin-45377c8b68ad
+[https://www.baeldung.com/kotlin-lazy-initialization](https://www.baeldung.com/kotlin-lazy-initialization)
