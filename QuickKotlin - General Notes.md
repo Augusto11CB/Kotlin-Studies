@@ -1,6 +1,9 @@
 
 # Quick Kotlin - General Notes
 
+## To Keep
+[kotlin-programming](https://www.programiz.com/kotlin-programming/getters-setters)
+
 ## Init Block and Secondary Constructor
 
 ### What is the difference between init block and constructor in kotln?
