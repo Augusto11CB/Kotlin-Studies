@@ -35,7 +35,7 @@
 
 - JEMEROV, Dmitry and ISAKAVA, Svetlana. Kotlin in Action, 2017
     - Livro em Inglês
-    - Orientação: Chamar no slack para pegar o livro 
+    - Orientação: **Chamar no slack para pegar o livro**
     - Tópicos cujo leitura é recomendada
         - Part I - Introduction Kotlin
             - What and why kotlin?
