@@ -452,20 +452,6 @@ data class User(val name: String, val age: Int)
 #### Mais sobre **Data Classes** loop
 [Kotlin Data classes](https://kotlinlang.org/docs/data-classes.html)
 
-## Exercises
-
-1. Criar uma função que verifica se uma palavra é palíndromo
-```
-fun String.isPalindrome()=
-
-```
-
-2. Converter uma frase em seu acrônimo.
-
-Converta um nome longo como Portable Network Graphics em seu acrônimo (PNG).
-
-Ex: Federal Bureau of Investigation => FBI
-
 ## Vantagens de Linguagens Estaticamente Tipadas
 A seguir estão alguns dos benefícios da tipagem estática:
 
