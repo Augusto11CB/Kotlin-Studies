@@ -1,5 +1,49 @@
-# Kotlin Fundamentals -  PagSeguro Training Program
-
+# Kotlin Fundamentals - PagSeguro Training Program
+- [Kotlin Fundamentals - PagSeguro Training Program](#kotlin-fundamentals---pagseguro-training-program)
+  - [Useful Links](#useful-links)
+  - [Kotlin](#kotlin)
+  - [Instalando e Rodando Kotlin](#instalando-e-rodando-kotlin)
+    - [SDKMAN](#sdkman)
+    - [Rodando Kotlin](#rodando-kotlin)
+  - [Kotlin Basics](#kotlin-basics)
+    - [Functions e Variables](#functions-e-variables)
+      - [Variables](#variables)
+      - [Functions](#functions)
+      - [Verificando Tipos](#verificando-tipos)
+    - [Expressions - `if else`](#expressions---if-else)
+      - [Elvis Operator](#elvis-operator)
+  - [Enums e `when`](#enums-e-when)
+    - [Enums](#enums)
+      - [Inicialização de Enums](#inicialização-de-enums)
+      - [Mais sobre Enums](#mais-sobre-enums)
+    - [O operador `when`](#o-operador-when)
+      - [Mais sobre `when` operator](#mais-sobre-when-operator)
+  - [Loops - `while` e `for`](#loops---while-e-for)
+    - [`for` Loop](#for-loop)
+      - [Mais sobre `for` loop](#mais-sobre-for-loop)
+    - [Kotlin `while` loop](#kotlin-while-loop)
+      - [Mais sobre `while` loop](#mais-sobre-while-loop)
+  - [Pacotes (*Packages*)](#pacotes-packages)
+  - [Classes, Objects, Interface e Properties](#classes-objects-interface-e-properties)
+    - [Classes](#classes)
+      - [Construtor](#construtor)
+      - [Criando instâncias de classes](#criando-instâncias-de-classes)
+    - [Companion objects](#companion-objects)
+      - [Mais sobre Companion Objects](#mais-sobre-companion-objects)
+    - [Herança](#herança)
+    - [Interface](#interface)
+    - [Open, final, e abstract modifiers](#open-final-e-abstract-modifiers)
+  - [Exceptions](#exceptions)
+    - [`try`, `catch` e `finally`](#try-catch-e-finally)
+      - [`finally`](#finally)
+  - [Collections and Arrays](#collections-and-arrays)
+  - [Data classes](#data-classes)
+      - [Mais sobre **Data Classes** loop](#mais-sobre-data-classes-loop)
+  - [Vantagens de Linguagens Estaticamente Tipadas](#vantagens-de-linguagens-estaticamente-tipadas)
+  - [Conceitos de Programação Funcional](#conceitos-de-programação-funcional)
+  - [Null-safety](#null-safety)
+    - [O que significa non-nullable por padrão?](#o-que-significa-non-nullable-por-padrão)
+    - [Como isso me ajuda?](#como-isso-me-ajuda)
 ## Useful Links 
 - https://play.kotlinlang.org/
 - https://kotlinlang.org/
@@ -354,8 +398,40 @@ fun main(args: Array<String>) {
 [Kotlin Companion Objects](https://blog.mindorks.com/companion-object-in-kotlin)
 
 ### Herança
-TODO
-https://www.geeksforgeeks.org/kotlin-inheritance/?ref=lbp
+A herança é um dos recursos mais importantes na programação orientada a objetos. A herança permite a reutilização de código, permite que todos os recursos de uma classe existente (classe base) sejam herdados por uma nova classe (classe derivada). Além disso, a classe derivada também pode adicionar alguns recursos próprios.
+
+```kt
+open class baseClass (x:Int ) {
+      ..........
+}
+class derivedClass(x:Int) : baseClass(x) {
+     ...........
+}
+```
+Em Kotlin, todas as classes são **final** por padrão. Para permitir que a classe derivada herde da classe base, devemos usar a palavra-chave open na frente da classe base.
+
+```kt
+//base class
+open class BaseClass{
+    val name = "Augusto"
+    fun printName(){
+        println("Base Class")
+    }
+}
+//derived class
+class DerivedClass: BaseClass() {
+    fun printNameWithInfo(info: String) {
+        println("${name} + ${info}" ) //inherit **name** property
+    }
+}
+fun main(args: Array<String>) {
+    val derived: DerivedClass = DerivedClass()
+    derived.printName()         // inheriting the  base class function
+    derived.printNameWithInfo("Developer")         // calling derived class function
+
+    val baseclass = DerivedClass() // What is going to happen here?
+}
+```
 
 ### Interface
 

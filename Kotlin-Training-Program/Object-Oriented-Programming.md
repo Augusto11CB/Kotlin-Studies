@@ -1,6 +1,4 @@
-# Object-Oriented Programming
-
-
+# Object-Oriented Programming - PagSeguro Training Program
 ## Paradigma
 > Forma de conceituar o que significa realizar computação e como tarefas executadas no computador dever ser estruturadas e organizadas
 > \- Budd, 2001

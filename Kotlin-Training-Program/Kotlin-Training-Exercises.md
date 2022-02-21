@@ -1,4 +1,4 @@
-# Exercícios
+# Kotlin Exercises - PagSeguro Training Program
 
 ## Exercício - Palíndromo
 Criar uma função que verifica se uma palavra é palíndromo
