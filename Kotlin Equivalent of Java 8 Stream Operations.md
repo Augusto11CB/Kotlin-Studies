@@ -1,8 +1,5 @@
-
 # Kotlin Equivalent of Java 8 Stream Operations
 
+* [What Java 8 Stream.collect equivalents are available in the standard Kotlin library?](https://stackoverflow.com/questions/34642254/what-java-8-stream-collect-equivalents-are-available-in-the-standard-kotlin-libr)
+* [Java 8 Stream API Analogies in Kotlin](https://www.baeldung.com/kotlin/java-8-stream-vs-kotlin)
 
-[what-java-8-stream-collect-equivalents-are-available-in-the-standard-kotlin-libr](https://stackoverflow.com/questions/34642254/what-java-8-stream-collect-equivalents-are-available-in-the-standard-kotlin-libr)
-
-[java-8-stream-vs-kotlin](https://www.baeldung.com/java-8-stream-vs-kotlin)
-> Written with [StackEdit](https://stackedit.io/).
