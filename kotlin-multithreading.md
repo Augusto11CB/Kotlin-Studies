@@ -21,5 +21,3 @@ fun main(args: Array<String>) {
     thread1.start() // Will output: Thread[Thread-1,5,main] has run
 }
 ```
-
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Font: YouTube</p></figcaption></figure>
